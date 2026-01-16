@@ -131,6 +131,8 @@ button {
 .app-container {
     flex-grow: 1;
 
+    position: relative;
+
     overflow: auto;
 
     padding: 8px;
@@ -231,6 +233,21 @@ button {
     &.inactive {
         background-color: rgb(225, 184, 0);
     }
+}
+
+.new-chat-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    padding: 16px;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+
+    background-color: #5865F2;
+    color: white;
 }
 
 .app-footer {

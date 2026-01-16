@@ -1,0 +1,119 @@
+/* Font & Icons */
+@import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+/* CSS Variables */
+
+:root {
+    --main-bg: #141318;
+    --app-bg: #1C1D22;
+    --footer-bg: #2D2D35;
+    --button-bg: #373A43;
+    --highlighted-bg: #26262E;
+}
+
+/* wrap region */
+
+body,
+button {
+    font-family: "Carlito", sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--main-bg);
+}
+
+/* end wrap region */
+
+/* app region */
+
+.main-container {
+    flex-grow: 1;
+
+    display: flex;
+
+    overflow: hidden;
+
+    margin-top: 8px;
+}
+
+.sidebar {
+    width: 80px;
+
+    padding: 30px 16px 0 16px;
+
+    flex-shrink: 0;
+}
+
+.sidebar>.server-btn {
+    margin-top: 12px;
+
+    img {
+        border-radius: 50%;
+    }
+}
+
+.app-container {
+    flex-grow: 1;
+
+    overflow: auto;
+
+    padding: 26px;
+
+    border-top-left-radius: 30px;
+
+    background-color: var(--app-bg);
+    color: white;
+}
+
+.app-container>.toolbar {
+    display: flex;
+    gap: 20px;
+
+    margin: 10px 0;
+
+    button {
+        padding: 5px;
+
+        background-color: var(--button-bg);
+        color: white;
+
+        border-radius: 20px;
+    }
+
+    button.add-friend-btn {
+        width: 100%;
+
+        border-radius: 20px;
+    }
+}
+
+.app-footer {
+    flex-shrink: 0;
+
+    height: 80px;
+
+    background-color: var(--footer-bg);
+}

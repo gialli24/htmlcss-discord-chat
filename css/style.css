@@ -59,6 +59,8 @@ button {
 
     display: flex;
 
+    position: relative;
+
     overflow: hidden;
 
     margin-top: 8px;
@@ -130,8 +132,6 @@ button {
 
 .app-container {
     flex-grow: 1;
-
-    position: relative;
 
     overflow: auto;
 
@@ -238,7 +238,7 @@ button {
 .new-chat-btn {
     position: absolute;
     bottom: 20px;
-    right: 20px;
+    right: 40px;
 
     padding: 16px;
 

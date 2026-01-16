@@ -67,14 +67,62 @@ button {
 .sidebar {
     width: 80px;
 
-    padding: 30px 16px 0 16px;
+    padding: 30px 0;
 
     flex-shrink: 0;
 }
 
-.sidebar>.server-btn {
-    margin-top: 12px;
+.sidebar>button {
+    display: flex;
 
+    position: relative;
+
+    margin-bottom: 24px;
+    padding: 0 16px 0 16px;
+}
+
+.sidebar>button.active::after {
+    content: "";
+    display: block;
+
+    width: 10px;
+    height: 40px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    translate: -60% 0;
+
+    border-radius: 10%;
+
+    background-color: white;
+}
+
+.sidebar>button:hover {
+    img {
+        transform: scale(1.1);
+
+    }
+
+    &::after {
+        content: "";
+        display: block;
+
+        width: 10px;
+        height: 40px;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        translate: -60% 0;
+
+        border-radius: 10%;
+
+        background-color: white;
+    }
+}
+
+.sidebar>.server-btn {
     img {
         border-radius: 50%;
     }
